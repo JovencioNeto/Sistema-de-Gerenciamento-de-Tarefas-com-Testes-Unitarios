@@ -5,7 +5,7 @@ describe("Sistema de Tarefas", () => {
     test("deve adicionar tarefa", () => {
         const task = service.addTask("Estudar")
         expect(task.title).toBe("Estudar")
-    });
+    })
 
     test("não deve adicionar tarefa vazia", () => {
         expect(() => service.addTask("")).toThrow()
@@ -41,12 +41,12 @@ describe("Sistema de Tarefas", () => {
         service.addTask("B")
         service.addTask("A")
 
-        const sorted = service.sortTasksAsc();
+        const sorted = service.sortTasksAsc()
         expect(sorted[0].title).toBe("A")
     })
 
     test("deve ordenar Z-A", () => {
-        const sorted = service.sortTasksDesc();
+        const sorted = service.sortTasksDesc()
         expect(sorted[0].title).toBeDefined()
     })
 
