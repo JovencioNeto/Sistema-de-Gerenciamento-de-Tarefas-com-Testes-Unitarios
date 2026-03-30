@@ -1,3 +1,3 @@
-let tasks = [];
+let tasks = []
 
-module.exports = tasks;
+module.exports = tasks
